@@ -60,7 +60,7 @@ export default function ReelsSlider() {
         modules={[EffectCoverflow]}
         className="mySwiper m-auto"
         breakpoints={{
-          320: { slidesPerView: 1.5 },
+          320: { slidesPerView: 2 },
           640: { slidesPerView: 2 },
           1280: { slidesPerView: 2.8 },
         }}
