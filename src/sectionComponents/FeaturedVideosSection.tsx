@@ -52,7 +52,6 @@ function VideoCard({ video, index, activeId, setActiveId }: VideoCardProps) {
   return (
     <motion.article
       variants={card}
-      initial="rest"
       animate="rest"
       whileHover="hover"
       initial={{ opacity: 0, y: 40 }}

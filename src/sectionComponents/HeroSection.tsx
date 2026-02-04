@@ -19,7 +19,7 @@ const item: Variants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.42, 0, 0.58, 1], // ✅ TS-compatible
+      ease: [0.42, 0, 0.58, 1], 
     } as Transition,
   },
 };
