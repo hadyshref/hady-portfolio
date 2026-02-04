@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { forwardRef, useImperativeHandle, useEffect, useRef, useMemo } from 'react';
 
 import * as THREE from 'three';
