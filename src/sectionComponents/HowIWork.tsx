@@ -23,17 +23,19 @@ const steps = [
 ];
 
 export default function ProcessTimeline() {
-    const containerRef = useRef(null);
-    const [progress, setProgress] = useState(0);
+    const containerRef = useRef<HTMLDivElement | null>(null);
+    const [progress, setProgress] = useState<number>(0);
 
     useEffect(() => {
         const handleScroll = () => {
             if (!containerRef.current) return;
+
             const rect = containerRef.current.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
             // fraction of container scrolled
-            let visible = (windowHeight - rect.top) / (rect.height + windowHeight);
+            let visible =
+                (windowHeight - rect.top) / (rect.height + windowHeight);
 
             // make it faster (increase speed)
             visible = Math.min(Math.max(visible * 1.5, 0), 1); // 1.5x faster
@@ -43,9 +45,9 @@ export default function ProcessTimeline() {
 
         window.addEventListener("scroll", handleScroll);
         handleScroll();
+
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
 
     return (
         <section className="text-white py-12 md:py-32 px-6">
@@ -65,11 +67,7 @@ export default function ProcessTimeline() {
                     </h2>
                 </motion.div>
 
-
-                <div
-                    ref={containerRef}
-                    className="relative flex justify-center"
-                >
+                <div ref={containerRef} className="relative flex justify-center">
                     {/* Timeline */}
                     <div className="relative">
                         <div className="absolute left-1/2 -translate-x-1/2 top-0 w-px bg-neutral-700 h-[80%]" />
@@ -79,13 +77,16 @@ export default function ProcessTimeline() {
                         />
 
                         <div className="space-y-40">
-                            {steps.map((step, index) => (
+                            {steps.map((step) => (
                                 <motion.div
                                     key={step.id}
                                     initial={{ opacity: 0, y: 40 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-100px" }}
-                                    transition={{ duration: 0.7, ease: "easeOut" }}
+                                    transition={{
+                                        duration: 0.7,
+                                        ease: "easeOut",
+                                    }}
                                     className="relative flex flex-col items-center"
                                 >
                                     <div className="w-12 h-12 rounded-full bg-neutral-900 border border-neutral-600 flex items-center justify-center text-m mb-6">

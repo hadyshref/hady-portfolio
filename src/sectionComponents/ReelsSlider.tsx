@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants, Transition } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,9 +10,11 @@ import { EffectCoverflow } from "swiper/modules";
 import { reelsData } from "../Data/DynamicData"
 
 export default function ReelsSlider() {
-    const videoRefs = useRef([]);
+    // Typed ref for HTMLVideoElement array
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
-    const handlePlay = (currentIndex) => {
+    // Explicitly type currentIndex as number
+    const handlePlay = (currentIndex: number) => {
         videoRefs.current.forEach((video, index) => {
             if (video && index !== currentIndex) {
                 video.pause();
@@ -21,9 +23,17 @@ export default function ReelsSlider() {
     };
 
     // Framer Motion variants for elegant fade/scale animation
-    const reelVariants = {
+    const reelVariants: Variants = {
         hidden: { opacity: 0, y: 50, scale: 0.95 },
-        visible: { opacity: 1, y: 0, scale: 1 },
+        visible: { 
+            opacity: 1, 
+            y: 0, 
+            scale: 1,
+            transition: { 
+                duration: 0.8, 
+                ease: [0.42, 0, 0.58, 1] // replaced string with cubic-bezier
+            } as Transition
+        },
     };
 
     return (
@@ -32,7 +42,7 @@ export default function ReelsSlider() {
                 className="text-center text-5xl text-white mb-12"
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }} // replaced string
             >
                 Recent Reels
             </motion.h3>
@@ -66,7 +76,6 @@ export default function ReelsSlider() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                            transition={{ duration: 0.8, ease: "easeOut" }}
                         >
                             <div className="rounded-xl transition-transform duration-300 hover:shadow-[0_0_30px_#fff]">
                                 <video
@@ -88,3 +97,4 @@ export default function ReelsSlider() {
         </div>
     );
 }
+
