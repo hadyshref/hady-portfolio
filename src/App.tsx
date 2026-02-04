@@ -4,7 +4,7 @@ import ReelsSlider from "./sectionComponents/ReelsSlider"
 import HowIWork from "./sectionComponents/HowIWork"
 import FeaturedVideosSection from "./sectionComponents/FeaturedVideosSection"
 import ContactMe from "./sectionComponents/ContactMe"
-import Footer from "./sectionComponents/Footer.jsx"
+import Footer from "./sectionComponents/Footer"
 
 function App() {
   return (
