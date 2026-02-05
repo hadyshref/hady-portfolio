@@ -1,11 +1,11 @@
 import { Mail, Phone, Instagram } from "lucide-react";
 
 export const reelsData = [
-    { id: 1, title: "before & after", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296174/rlv9xd_xfn9s2.mp4" },
-    { id: 2, title: "reels", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296172/exuysz_pzljee.mp4" },
+    { id: 1, title: "before & after", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308803/Comp_1_nvltuj.mp4" },
+    { id: 2, title: "reels", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308931/IMG_8075_hvjsn6.mp4" },
     { id: 3, title: "Reel 3", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296169/8q3iyh_iygbnj.mp4" },
     { id: 4, title: "Reel 4", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296129/1lz5gq_fj0q86.mp4" },
-    { id: 5, title: "Reel 5", video: "https://streamable.com/euzxm9" },
+    { id: 5, title: "Reel 5", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308975/IMG_5308_mwufpy.mp4" },
     { id: 6, title: "Reel 6", video: "https://streamable.com/rlv9xd" },
     { id: 7, title: "Reel 7", video: "https://streamable.com/8q3iyh" },
     { id: 8, title: "Reel 8", video: "https://streamable.com/fpnpjv" },
@@ -15,7 +15,7 @@ export const reelsData = [
 
 export const videos = [
     { id: 1, title: "binharmal", tag: "mudospace", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308479/-1_%D8%B5%D9%82%D8%B1-_a5a1ri.mp4" },
-    { id: 2, title: "TEETH", tag: "Motion Graphics", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
+    { id: 2, title: "TEETH", tag: "Motion Graphics", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308406/Img_5405_c6pgpo.mp4" },
     { id: 3, title: "Short Documentary Cut", tag: "Editing", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
     { id: 4, title: "Product Launch Film", tag: "Commercial", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296203/621s9i_bqumvv.mp4" },
 ];
