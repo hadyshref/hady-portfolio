@@ -73,14 +73,16 @@ export default function ReelsSlider() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
                             <div className="rounded-xl transition-transform duration-300 hover:shadow-[0_0_30px_#fff]">
-                                <video
-                                    ref={(el) => (videoRefs.current[index] = el)}
-                                    onPlay={() => handlePlay(index)}
-                                    src={reel.video}
-                                    className="w-72 md:w-80 lg:w-88 h-[420px] md:h-[468px] lg:h-[562px] xl:h-[648px] object-cover rounded-xl"
-                                    controls
-                                    playsInline
-                                />
+   <video
+  ref={(el) => (videoRefs.current[index] = el)}
+  onPlay={() => handlePlay(index)}
+  src={`${reel.video}#t=0.001`}
+  preload="metadata"
+  className="w-72 md:w-80 lg:w-88 h-[420px] md:h-[468px] lg:h-[562px] xl:h-[648px] object-cover rounded-xl"
+  controls
+  playsInline
+/>
+
                                 <p className="p-4 text-white text-base md:text-lg lg:text-xl text-center">
                                     {reel.title}
                                 </p>

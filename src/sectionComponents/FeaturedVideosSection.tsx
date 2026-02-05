@@ -77,15 +77,16 @@ function VideoCard({ video, index, activeId, setActiveId }: VideoCardProps) {
           className="absolute inset-0 z-20 cursor-pointer"
         />
 
-        <video
-          ref={ref}
-          className="h-full w-full object-cover transition-all duration-700 ease-out group-hover:grayscale-0"
-          src={video.src}
-          playsInline
-          preload="metadata"
-          onPlay={() => setActiveId(video.id)}
-          onEnded={() => setActiveId(null)}
-        />
+<video
+  ref={ref}
+  className="h-full w-full object-cover transition-all duration-700 ease-out group-hover:grayscale-0"
+  src={`${video.src}#t=0.001`}
+  playsInline
+  preload="metadata"
+  onPlay={() => setActiveId(video.id)}
+  onEnded={() => setActiveId(null)}
+/>
+
 
         {/* Reveal mask */}
         <motion.div
