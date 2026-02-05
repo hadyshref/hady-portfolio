@@ -1,6 +1,8 @@
-import Beams from "../components/Beams.jsx";
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import type { Variants, Transition } from "framer-motion";
+
+const Beams = lazy(() => import("../components/Beams.jsx"));
 
 const container: Variants = {
   hidden: {},
@@ -19,7 +21,7 @@ const item: Variants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.42, 0, 0.58, 1], 
+      ease: [0.42, 0, 0.58, 1],
     } as Transition,
   },
 };
@@ -36,16 +38,18 @@ function HeroSection() {
           zIndex: -100,
         }}
       >
-        <Beams
-          beamWidth={3}
-          beamHeight={30}
-          beamNumber={20}
-          lightColor="#ffffff"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={30}
-        />
+        <Suspense fallback={null}>
+          <Beams
+            beamWidth={3}
+            beamHeight={30}
+            beamNumber={20}
+            lightColor="#ffffff"
+            speed={2}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={30}
+          />
+        </Suspense>
       </div>
 
       {/* Foreground Content */}
@@ -55,15 +59,14 @@ function HeroSection() {
         animate="visible"
         className="p-relative z-100 flex flex-col justify-center items-center gap-10"
       >
-<motion.img
-  variants={item}
-  src="/assets/profile.jpg"
-  className="w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-full border-solid border-2 border-white shadow-[0_0_25px_rgba(255,255,255,0.35),0_0_60px_rgba(255,255,255,0.2)]"
-  alt="Hady Sherif portrait"
-    fetchPriority="high"
-  decoding="async"
-/>
-
+        <motion.img
+          variants={item}
+          src="/assets/profile.jpg"
+          className="w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-full border-solid border-2 border-white shadow-[0_0_25px_rgba(255,255,255,0.35),0_0_60px_rgba(255,255,255,0.2)]"
+          alt="Hady Sherif portrait"
+          fetchPriority="high"
+          decoding="async"
+        />
 
         <motion.p variants={item} className="text-4xl">
           Hi, I’m Hady Sherif
@@ -77,8 +80,10 @@ function HeroSection() {
           I help brands and companies turn ideas into cinematic videos
         </motion.p>
 
-        <motion.div variants={item} className="flex flex-col sm:flex-row items-center gap-4">
-          {/* Primary Button */}
+        <motion.div
+          variants={item}
+          className="flex flex-col sm:flex-row items-center gap-4"
+        >
           <a
             href="#work"
             className="
@@ -94,7 +99,6 @@ function HeroSection() {
             Watch My Work
           </a>
 
-          {/* Secondary Button */}
           <a
             href="#contact-me"
             className="
@@ -116,4 +120,5 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
 
