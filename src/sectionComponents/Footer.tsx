@@ -9,7 +9,7 @@ export default function Footer() {
             className="text-center p-4 border-t-[0.5px] border-white"
         >
             <p className="text-sm text-neutral-400">
-                © 2025 Hady Sherif. All rights reserved.
+                © 2026 Hady Sherif. All rights reserved.
             </p>
         </motion.footer>
     );
