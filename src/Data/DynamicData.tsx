@@ -14,7 +14,7 @@ export const reelsData = [
 ];
 
 export const videos = [
-    { id: 1, title: "binharmal", tag: "mudospace", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
+    { id: 1, title: "binharmal", tag: "mudospace", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308479/-1_%D8%B5%D9%82%D8%B1-_a5a1ri.mp4" },
     { id: 2, title: "TEETH", tag: "Motion Graphics", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
     { id: 3, title: "Short Documentary Cut", tag: "Editing", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
     { id: 4, title: "Product Launch Film", tag: "Commercial", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296203/621s9i_bqumvv.mp4" },
