@@ -1,10 +1,10 @@
 import { Mail, Phone, Instagram } from "lucide-react";
 
 export const reelsData = [
-    { id: 1, title: "before & after", video: "https://streamable.com/zawsuj" },
-    { id: 2, title: "reels", video: "https://streamable.com/vopy4a" },
-    { id: 3, title: "Reel 3", video: "https://streamable.com/1lz5gq" },
-    { id: 4, title: "Reel 4", video: "https://streamable.com/hi07hg" },
+    { id: 1, title: "before & after", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296174/rlv9xd_xfn9s2.mp4" },
+    { id: 2, title: "reels", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296172/exuysz_pzljee.mp4" },
+    { id: 3, title: "Reel 3", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296169/8q3iyh_iygbnj.mp4" },
+    { id: 4, title: "Reel 4", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296129/1lz5gq_fj0q86.mp4" },
     { id: 5, title: "Reel 5", video: "https://streamable.com/euzxm9" },
     { id: 6, title: "Reel 6", video: "https://streamable.com/rlv9xd" },
     { id: 7, title: "Reel 7", video: "https://streamable.com/8q3iyh" },
@@ -14,10 +14,10 @@ export const reelsData = [
 ];
 
 export const videos = [
-    { id: 1, title: "binharmal", tag: "mudospace", src: "https://streamable.com/exuysz" },
-    { id: 2, title: "Motion Design Reel", tag: "Motion Graphics", src: "https://streamable.com/621s9i" },
-    { id: 3, title: "Short Documentary Cut", tag: "Editing", src: "https://streamable.com/4lq7d7" },
-    { id: 4, title: "Product Launch Film", tag: "Commercial", src: "https://streamable.com/pjg9x6" },
+    { id: 1, title: "binharmal", tag: "mudospace", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
+    { id: 2, title: "TEETH", tag: "Motion Graphics", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
+    { id: 3, title: "Short Documentary Cut", tag: "Editing", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296161/4lq7d7_eetmig.mp4" },
+    { id: 4, title: "Product Launch Film", tag: "Commercial", src: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296203/621s9i_bqumvv.mp4" },
 ];
 
 export const contacts = [
