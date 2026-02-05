@@ -59,7 +59,7 @@ export default function ReelsSlider() {
                     1280: { slidesPerView: 2.8 },
                 }}
             >
-                {reelsData.slice(0, 5).map((reel, index) => (
+                {reelsData.map((reel, index) => (
                     <SwiperSlide
                         key={reel.id}
                         className="flex justify-center items-center"
