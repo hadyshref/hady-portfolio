@@ -55,12 +55,15 @@ function HeroSection() {
         animate="visible"
         className="p-relative z-100 flex flex-col justify-center items-center gap-10"
       >
-        <motion.img
-          variants={item}
-          src="/assets/profile.jpg"
-          className="w-[300px] md:w-[380px] rounded-full border-solid border-2 border-white shadow-[0_0_25px_rgba(255,255,255,0.35),0_0_60px_rgba(255,255,255,0.2)]"
-          alt=""
-        />
+<motion.img
+  variants={item}
+  src="/assets/profile.jpg"
+  className="w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-full border-solid border-2 border-white shadow-[0_0_25px_rgba(255,255,255,0.35),0_0_60px_rgba(255,255,255,0.2)]"
+  alt="Hady Sherif portrait"
+    fetchPriority="high"
+  decoding="async"
+/>
+
 
         <motion.p variants={item} className="text-4xl">
           Hi, I’m Hady Sherif

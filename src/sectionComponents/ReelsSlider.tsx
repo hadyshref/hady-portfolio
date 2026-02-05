@@ -80,6 +80,8 @@ export default function ReelsSlider() {
                                     className="w-72 md:w-80 lg:w-88 h-[420px] md:h-[468px] lg:h-[562px] xl:h-[648px] object-cover rounded-xl"
                                     controls
                                     playsInline
+                                    preload="none"
+
                                 />
                                 <p className="p-4 text-white text-base md:text-lg lg:text-xl text-center">
                                     {reel.title}
