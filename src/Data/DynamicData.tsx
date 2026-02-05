@@ -1,8 +1,8 @@
 import { Mail, Phone, Instagram } from "lucide-react";
 
 export const reelsData = [
-    { id: 1, title: "Reel 1", video: "./assets/reel1.mp4" },
-    { id: 2, title: "Reel 2", video: "./assets/reel2.mp4" },
+    { id: 1, title: "before & after", video: "./assets/reel1.mp4" },
+    { id: 2, title: "reels", video: "./assets/reel2.mp4" },
     { id: 3, title: "Reel 3", video: "./assets/reel3.mp4" },
     { id: 4, title: "Reel 4", video: "./assets/reel4.mp4" },
     { id: 5, title: "Reel 5", video: "./assets/reel5.mp4" },
