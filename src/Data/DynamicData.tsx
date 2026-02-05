@@ -4,7 +4,7 @@ export const reelsData = [
     { id: 1, title: "before & after", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308803/Comp_1_nvltuj.mp4" },
     { id: 2, title: "reels", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308931/IMG_8075_hvjsn6.mp4" },
     { id: 3, title: "Reel 3", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770296169/8q3iyh_iygbnj.mp4" },
-    { id: 4, title: "Reel 4", video: "https://streamable.com/7dc343" },
+    { id: 4, title: "Reel 4", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770310389/Img_9442_oq8lho.mp4" },
     { id: 5, title: "Reel 5", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770308975/IMG_5308_mwufpy.mp4" },
     { id: 6, title: "Reel 6", video: "https://streamable.com/rlv9xd" },
     { id: 7, title: "Reel 7", video: "https://streamable.com/8q3iyh" },
