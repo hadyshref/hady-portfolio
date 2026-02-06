@@ -10,7 +10,7 @@ export const reelsData = [
     { id: 7, title: "Reel 7", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770313411/Img_8467_id8pqr.mp4" },
     { id: 8, title: "Reel 8", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770326887/IMG_7933_lyswle.mp4" },
     { id: 9, title: "Reel 9", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770373086/Img_3989_efaooq.mp4" },
-    { id: 10, title: "Reel 10", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770373086/Img_3989_efaooq.mp4" },
+    { id: 10, title: "Reel 10", video: "https://res.cloudinary.com/dvifw6i2x/video/upload/v1770373090/Img_7992_vepnsy.mp4" },
 ];
 
 export const videos = [
